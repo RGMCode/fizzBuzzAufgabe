@@ -34,6 +34,8 @@ class MainTest {
         assertEquals("fizzbuzz", actual);
     }
 
+    ///////////////////////////////////////////////////////////////////////////////
+
     @Test
     void smalerZero() {
         int num = 1;
