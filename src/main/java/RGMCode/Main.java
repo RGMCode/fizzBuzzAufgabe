@@ -16,6 +16,8 @@ public class Main {
         }
     }
 
+    ///////////////////////////////////////////////////////////
+
     public static boolean smalerThanZero(int num){
         if (num > 0){
             return true;
@@ -24,6 +26,8 @@ public class Main {
         }
     }
 
+    ///////////////////////////////////////////////////////////
+
     public static int sumSquareOrSubstract(int num1, int num2){
         if (num1 > num2){
             return num1 + num2;
@@ -31,6 +35,8 @@ public class Main {
             return num1 * num2;
         }
     }
+
+    ///////////////////////////////////////////////////////////
 
     public static int sumSquareOrSubBoolean(int num1, int num2, boolean subtract) {
         if (subtract) {
@@ -41,9 +47,5 @@ public class Main {
             return num1 * num2;
         }
     }
-
-
-
-
 
 }

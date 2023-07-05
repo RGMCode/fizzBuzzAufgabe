@@ -41,6 +41,8 @@ class MainTest {
         assertTrue(actual);
     }
 
+    ///////////////////////////////////////////////////////////////////////////////
+
     @Test
     void sumSquareOrSubtractWhenFirstNumberIsGreater() {
         int num1 = 6;
@@ -56,6 +58,8 @@ class MainTest {
         int result = Main.sumSquareOrSubstract(num1, num2);
         assertEquals(15, result);
     }
+
+    ///////////////////////////////////////////////////////////////////////////////
 
     @Test
     void sumSquareOrSubBooleanWhenFirstNumberIsGreaterAndSubtractIsTrue() {
