@@ -32,4 +32,18 @@ public class Main {
         }
     }
 
+    public static int sumSquareOrSubBoolean(int num1, int num2, boolean subtract) {
+        if (subtract) {
+            return num1 - num2;
+        } else if (num1 > num2) {
+            return num1 + num2;
+        } else {
+            return num1 * num2;
+        }
+    }
+
+
+
+
+
 }

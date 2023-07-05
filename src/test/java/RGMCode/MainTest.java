@@ -34,7 +34,6 @@ class MainTest {
         assertEquals("fizzbuzz", actual);
     }
 
-
     @Test
     void smalerZero() {
         int num = 1;
@@ -55,6 +54,42 @@ class MainTest {
         int num1 = 3;
         int num2 = 5;
         int result = Main.sumSquareOrSubstract(num1, num2);
+        assertEquals(15, result);
+    }
+
+    @Test
+    void sumSquareOrSubBooleanWhenFirstNumberIsGreaterAndSubtractIsTrue() {
+        int num1 = 6;
+        int num2 = 4;
+        boolean subtract = true;
+        int result = Main.sumSquareOrSubBoolean(num1, num2, subtract);
+        assertEquals(2, result);
+    }
+
+    @Test
+    void sumSquareOrSubBooleanWhenFirstNumberIsGreaterAndSubtractIsFalse() {
+        int num1 = 6;
+        int num2 = 4;
+        boolean subtract = false;
+        int result = Main.sumSquareOrSubBoolean(num1, num2, subtract);
+        assertEquals(10, result);
+    }
+
+    @Test
+    void sumSquareOrSubBooleanWhenFirstNumberIsNotGreaterAndSubtractIsTrue() {
+        int num1 = 3;
+        int num2 = 5;
+        boolean subtract = true;
+        int result = Main.sumSquareOrSubBoolean(num1, num2, subtract);
+        assertEquals(-2, result);
+    }
+
+    @Test
+    void sumSquareOrSubBooleanWhenFirstNumberIsNotGreaterAndSubtractIsFalse() {
+        int num1 = 3;
+        int num2 = 5;
+        boolean subtract = false;
+        int result = Main.sumSquareOrSubBoolean(num1, num2, subtract);
         assertEquals(15, result);
     }
 
